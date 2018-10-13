@@ -13,8 +13,8 @@ and did excellent work in that project which you can find HERE, though I have ad
 
 ### Installation
 
-WitnessProtection requires [Node.js](https://nodejs.org/) v4+ to run.
-Mongoose Server running on Local Host is also required.
+- WitnessProtection requires [Node.js](https://nodejs.org/) v4+ to run.
+- Mongoose Server running on Local Host is also required.
 
 ### ToDo:
 - Cleanup **(V1.0)**

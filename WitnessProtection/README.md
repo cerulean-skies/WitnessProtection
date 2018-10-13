@@ -19,6 +19,6 @@ Mongoose Server running on Local Host is also required.
 ### ToDo:
 - Cleanup (V1.0)
 - Validation (V1.3)
-- Security (V2.5)
-- Headless (V2.8)
-- GUI Updates (V3.0)
+- Security (V1.5)
+- Headless (V1.8)
+- GUI Updates (2.0)

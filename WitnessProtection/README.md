@@ -20,5 +20,5 @@ Mongoose Server running on Local Host is also required.
 - Cleanup (V1.0)
 - Validation (V1.3)
 - Security (V2.5)
-- Headless (V2.7)
+- Headless (V2.8)
 - GUI Updates (V3.0)

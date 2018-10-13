@@ -1,0 +1,32 @@
+{
+  "name": "WitnessProtection",
+  "version": "1.0.0",
+  "description": "Witness Failover Tool",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ceruleanblue",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "nightmare": "^3.0.1",
+    "nodemailer": "^4.6.8",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "wlsjs": "^0.1.1"
+  }
+}

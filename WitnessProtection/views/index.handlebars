@@ -1,0 +1,37 @@
+<h2 class="page-header">WitnessProtection</h2>
+<h2>{{log}}</h2>
+<p>Your Latest Notifications can be Found Below.</p>
+
+
+
+{{#if favourites}}
+    <table style="width:100%" border="1">
+      <tr>
+        <th>Username</th>
+        <th>Voting Power</th>
+        <th>Number Of Times</th>
+        <th>Time to Wait</th>
+        <th>Followers</th>
+        <th>Edit Fave</th>
+
+      </tr>
+        {{#each favourites}}
+            <tr>
+                <td>@{{username}}</td>
+                <td>{{votingpower}}</td>
+                <td>{{numberoftimes}}</td>
+                <td>{{timetowait}}</td>
+                <td>{{followers}}</td>
+                <td><button class="editbtn">edit</button></td>
+
+            </tr>
+        {{/each}}
+    </table>
+{{else}}
+    <h3>No Current Notifications</h3>
+{{/if}}
+
+
+<form method="post" action="/test/run" id="removeuserform">
+  <button type="submit" class="btn btn-default">Start Witness Protection</button>
+</form>

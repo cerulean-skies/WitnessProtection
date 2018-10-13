@@ -1,0 +1,83 @@
+<h2 class="page-header">Register</h2>
+{{#if user}}
+        <div class="alert alert-danger">Username has taken already try new</div>
+{{/if}}
+{{#if mail}}
+        <div class="alert alert-danger">Email has taken already try new</div>
+{{/if}}
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" action="/users/register">
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" placeholder="Username of Witness" name="username">
+  </div>
+ <div class="form-group">
+  <label>Notification Email</label>
+  <input type="email" class="form-control" placeholder="Email to Receive Alerts at." name="emailReceiving">
+ </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" placeholder="Main Password" name="password">
+  </div>
+  <div class="form-group">
+    <label>Confirm Password</label>
+    <input type="password" class="form-control" placeholder="Confirm Main Password" name="password2">
+  </div>
+  <div class="form-group">
+    <label>Active Key</label>
+    <input type="password" class="form-control" placeholder="Backup Password" name="passwordActive">
+  </div>
+  <div class="form-group">
+    <label>Confirm Active Key</label>
+    <input type="password" class="form-control" placeholder="Confirm Backup Password" name="passwordBackupActive">
+  </div>
+  <div class="form-group">
+    <label>Main Public Brain Key Key</label>
+    <input type="password" class="form-control" placeholder="Backup Password" name="mainBrainKey">
+  </div>
+  <div class="form-group">
+    <label>Confirm Main Public Brain Key Key</label>
+    <input type="password" class="form-control" placeholder="Confirm Backup Password" name="mainBrainKey2">
+  </div>
+  <div class="form-group">
+    <label>Backup Public Brain Key</label>
+    <input type="password" class="form-control" placeholder="Backup Password" name="passwordBackup">
+  </div>
+  <div class="form-group">
+    <label>Confirm Backup Public Brain Key</label>
+    <input type="password" class="form-control" placeholder="Confirm Backup Password" name="passwordBackup2">
+  </div>
+  <div class="form-group">
+    <label>Check Rate</label>
+    <input type="text" class="form-control" placeholder="How often to check witness, in MS." name="checkRate">
+  </div>
+  <div class="form-group">
+    <label>Threshold</label>
+    <input type="text" class="form-control" placeholder="Threshold (Minimum Allowed Missed Blocks)" name="threshold">
+  </div>
+  <div class="form-group">
+    <label>Account Creation Fee</label>
+    <input type="text" class="form-control" placeholder="Account Creation Fee" name="accountCreationFee">
+  </div>
+  <div class="form-group">
+    <label>Witness Link</label>
+    <input type="text" class="form-control" placeholder="Link to post on Witness Update" name="WitnessLink">
+  </div>
+  <div class="form-group">
+   <label>Sending Email</label>
+   <input type="email" class="form-control" placeholder="Email to send/receive alerts from." name="emailSending">
+ </div>
+ <div class="form-group">
+  <label>Sending Email Password</label>
+  <input type="password" class="form-control" placeholder="Email to send/receive alerts from." name="emailSendingPassword">
+</div>
+  <div class="form-group">
+   <label>Maximum Block Size</label>
+   <input type="text" class="form-control" placeholder="Maximum Block Size" name="MaximumBlockSize">
+ </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

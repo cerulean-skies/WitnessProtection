@@ -1,3 +1,4 @@
+
 # WitnessProtection
 
 This is a  Whaleshares Witness Failover Tool, written in NodeJS and based off of the original design by the Witness @kennybll, he is a solid guy,
@@ -12,5 +13,12 @@ and did excellent work in that project which you can find HERE, though I have ad
 
 ### Installation
 
-WitnessProtection requires [Node.js](https://nodejs.org/) v4+ to run.
-Mongoose Server running on Local Host is also required.
+- WitnessProtection requires [Node.js](https://nodejs.org/) v4+ to run.
+- Mongoose Server running on Local Host is also required.
+
+### ToDo:
+- Cleanup **(V1.0)**
+- Validation **(V1.3)**
+- Security **(V1.5)**
+- Headless **(V1.8)**
+- GUI Updates **(2.0)**
